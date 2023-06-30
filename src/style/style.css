@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  /* 1rem = 10px*/
+  font-size: 62%;
+
+  --gray-900: #101010;
+  --gray-800: #1A1A1A;
+  --gray-600: #303030;
+  --blue-900: #231F2D;
+  --green-700: #11D500;
+  --text-color: #FFFFFF;
+  --purple: #8C00CE;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--gray-800);
+}
+
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+#app > header {
+  width: 100%;
+  height: 4rem;
+}
+
+#app header #menu {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 1rem;
+  background-color: var(--gray-600);
+}
+
+header #menu .logo img {
+  max-width: 15.3rem;
+  height: 3.6rem;
+}
+
+#menu .menu-modal {
+  display: none;
+}
+
+#menu .menu-modal.actived {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 8.2rem;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  background: rgba(0,0,0,0.9);
+}
+
+.menu-modal .menu-items ul {
+   margin-top: 6rem;
+   list-style-type: none;
+}
+.menu-modal .menu-items ul li {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.menu-modal .menu-items ul li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.menu-modal .user-menu {
+  color: var(--text-color);
+  font-size: 3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+
+  margin-top: 5rem;
+}
+
+.menu-modal .user-menu .cart {
+  position: relative;
+}
+.menu-modal .user-menu .cart:after {
+  font-family: "Inter", sans-serif;
+  content: attr(data-value);
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+  border: 1px solid var(--text-color);
+  border-radius: 9999px;
+  background: var(--purple);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+
+#menu .active-menu {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
