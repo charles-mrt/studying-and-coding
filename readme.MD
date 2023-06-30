@@ -6,6 +6,11 @@ Este projeto de estudo consiste em uma landing page de venda de um produto. O ob
 
 O projeto consiste em uma página única (landing page) que promove um produto específico. A página é responsiva e possui um design atraente e agradável aos olhos, com o objetivo de atrair e converter visitantes em potenciais clientes.
 
+<p align="center">
+  <img alt="land-commerce" src=".github/preview.jpg" width="30%">
+</p>
+
+
 ## Funcionalidades Principais
 
 - [x] Ativação do menu modal por meio de um botão ou link específico na página.
