@@ -34,9 +34,12 @@ body {
 #app {
   width: 100%;
   height: 100%;
+
+  /*REVIEW*/
+  overflow-x: hidden;
 }
 
-#app > header {
+#app>header {
   width: 100%;
   height: 4rem;
 }
@@ -72,13 +75,14 @@ header #menu .logo img {
   left: 0;
   margin: auto;
 
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .menu-modal .menu-items ul {
-   margin-top: 6rem;
-   list-style-type: none;
+  margin-top: 6rem;
+  list-style-type: none;
 }
+
 .menu-modal .menu-items ul li {
   text-align: center;
   margin: 3rem 0;
@@ -110,6 +114,7 @@ header #menu .logo img {
 .menu-modal .user-menu .cart {
   position: relative;
 }
+
 .menu-modal .user-menu .cart:after {
   font-family: "Inter", sans-serif;
   content: attr(data-value);
@@ -133,8 +138,84 @@ header #menu .logo img {
 #menu .active-menu {
   font-size: 3.5rem;
   color: var(--text-color);
-  
+
   display: flex;
   align-items: center;
   justify-self: center;
+}
+
+/*main*/
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2.6rem;
+  margin: auto;
+}
+
+header h1 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--text-color);
+  text-align: center;
+  margin: 1.3rem 0;
+}
+
+main #content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.4rem;
+  place-items: center;
+}
+
+@media (min-width:600px) {
+  main #content {   
+    grid-template-columns: repeat(2,1fr);   
+  } 
+}
+
+@media (min-width: 900px) {
+  #menu .menu-modal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu-modal .menu-items {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-modal .menu-items ul {
+    display: flex;
+    gap: 3.5rem;
+    margin: 0;
+  }
+  .menu-modal .menu-items ul li {
+    margin: 0;
+  }
+  #menu .active-menu {
+    display: none;
+  }
+  #menu .user-menu {
+    font-size: 2.3rem;
+    gap: 1rem;
+    margin: 0;
+  }
+
+  main #content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  main #content {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
