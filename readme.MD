@@ -14,9 +14,9 @@ O projeto consiste em uma página única (landing page) que promove um produto e
 ## Funcionalidades Principais
 
 - [x] Ativação do menu modal por meio de um botão ou link específico na página.
-- [ ] Apresentação do produto com descrição e imagens relevantes.
+- [x] Apresentação do produto com descrição e imagens relevantes.
 - [ ] Elementos interativos, como botões, animações ou efeitos visuais, para melhorar a experiência do usuário.
-- [ ] Layout responsivo para garantir que a página seja acessível em diferentes dispositivos e tamanhos de tela.
+- [x] Layout responsivo para garantir que a página seja acessível em diferentes dispositivos e tamanhos de tela.
 - [ ] Formulário de contato para que os visitantes possam fornecer informações e enviar perguntas ou consultas.
 
 ## Tecnologias Utilizadas
