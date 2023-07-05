@@ -171,9 +171,9 @@ main #content {
 }
 
 @media (min-width:600px) {
-  main #content {   
-    grid-template-columns: repeat(2,1fr);   
-  } 
+  main #content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 900px) {
@@ -183,6 +183,7 @@ main #content {
     justify-content: space-between;
     width: 100%;
   }
+
   .menu-modal .menu-items {
     width: 100%;
     display: flex;
@@ -194,12 +195,15 @@ main #content {
     gap: 3.5rem;
     margin: 0;
   }
+
   .menu-modal .menu-items ul li {
     margin: 0;
   }
+
   #menu .active-menu {
     display: none;
   }
+
   #menu .user-menu {
     font-size: 2.3rem;
     gap: 1rem;
@@ -215,4 +219,158 @@ main #content {
   main #content {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+
+/*
+*** cart-menu
+*/
+#cart-items.actived {
+  background: var(--text-color);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+
+  padding: 2.4rem;
+}
+
+#cart-items .cart-close-button {
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 9999px;
+
+  background: var(--purple);
+  color: var(--text-color);
+
+
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: .5rem;
+  right: .5rem;
+}
+
+#cart-items header {
+  width: 100%;
+  border-bottom: 2px solid black;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+#cart-items header strong {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#cart-items #products {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  padding: 1rem;
+}
+
+#cart-items #products .product {
+  width: 100%;
+  min-height: 12rem;
+  max-height: 15rem;
+  
+  border-bottom: 1px solid #CACACA;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+#cart-items #products .product img {
+  width: 9.4rem;
+  height: auto;
+}
+
+#cart-items #products .product .description {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  color: #464646;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product .description .product-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.product .description .product-title strong {
+  font-size: 1.2rem;
+}
+
+.product .description > div:not(.product-title) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+.product .product-total {
+  font-size: 1.2rem;
+}
+.product .product-value {
+  font-size: 1.4rem;
+}
+
+#cart-items footer.cart-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.6rem;
+
+  margin-top: 1rem;
+}
+
+#cart-items footer.cart-button a {
+  width: 22.3rem;
+  height: 5.6rem;
+  border-radius: 5px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 1.4px;
+  line-height: normal;
+  color: var(--text-color);
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cart-items footer.cart-button a i {
+  font-size: 2.5rem;
+  margin-left: .5rem;
+}
+
+#cart-items footer.cart-button a:first-child {
+  background: var(--purple);
+}
+
+#cart-items footer.cart-button a:last-child {
+  background: #58D36C;
 }
