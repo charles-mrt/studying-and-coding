@@ -10,7 +10,7 @@ const CardProduct = (totalProducts) => {
     renderProduct += `
       
       <div class="product">
-        <img src="./src/assets/monitor-odyssey.png" alt="monitor">
+        <img src="./src/assets/image/products/monitor-odyssey.png" alt="monitor">
 
         <h2>montor samsung 55"</h2>
 
