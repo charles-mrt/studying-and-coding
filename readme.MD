@@ -18,7 +18,7 @@ O projeto consiste em uma página única (landing page) que promove um produto e
 - [ ] Elementos interativos, como botões, animações ou efeitos visuais, para melhorar a experiência do usuário.
 - [x] Layout responsivo para garantir que a página seja acessível em diferentes dispositivos e tamanhos de tela.
 - [ ] Formulário de contato para que os visitantes possam fornecer informações e enviar perguntas ou consultas.
-- [x] opção para visualizar o carrinho de comprar sem a necessidade de carregar a pagina do carrinho de compras.
+- [x] opção para visualizar o carrinho de compras sem a necessidade de carregar a página do carrinho.
 
 ## Tecnologias Utilizadas
 
